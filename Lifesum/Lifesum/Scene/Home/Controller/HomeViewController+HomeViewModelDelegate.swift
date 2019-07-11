@@ -20,10 +20,14 @@ extension HomeViewController: HomeViewModelDelegate {
                 subTitle: "\(foodInfo.response.calories)",
                 message: Constants.message
             )
+
+            self.refreshMiniInfoViewForFoodInfo(foodInfo)
         }
     }
 
-    private func refreshMiniInfoView() {
-        
+    private func refreshMiniInfoViewForFoodInfo(_ foodInfo: FoodInfo) {
+        self.carbsView?.set(title: "carbs".uppercased(), value: "\(foodInfo.response.carbs)%")
+        self.proteinView?.set(title: "protein".uppercased(), value: "\(foodInfo.response.protein)%")
+        self.fatView?.set(title: "fat".uppercased(), value: "\(foodInfo.response.fat)%")
     }
 }

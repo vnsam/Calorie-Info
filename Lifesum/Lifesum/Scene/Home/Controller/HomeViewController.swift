@@ -24,6 +24,8 @@ class HomeViewController: UIViewController {
 
         _ = self.becomeFirstResponder()
 
+        self.setupMiniInfoViews()
+
         self.initializeViewModel()
 
         self.displayRandomFoodInfo()
@@ -39,10 +41,17 @@ class HomeViewController: UIViewController {
         }
     }
 
-    private func setupMiniViews() {
+    private func setupMiniInfoViews() {
+        self.miniInfoStackView.distribution = .equalSpacing
+        self.miniInfoStackView.spacing = 16.0
+
         self.carbsView = MiniInfoView.newInstance()
         self.proteinView = MiniInfoView.newInstance()
         self.fatView = MiniInfoView.newInstance()
+
+        self.miniInfoStackView.addArrangedSubview(self.carbsView!)
+        self.miniInfoStackView.addArrangedSubview(self.proteinView!)
+        self.miniInfoStackView.addArrangedSubview(self.fatView!)
     }
 
     private func initializeViewModel() {
