@@ -1,21 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Lifesum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zN-l1-qLt" customClass="CircleView" customModule="Lifesum" customModuleProvider="target">
+                                <rect key="frame" x="71" y="121" width="272" height="271.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJD-vV-SxL">
+                                        <rect key="frame" x="116.5" y="32" width="39" height="22"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FgX-UD-Yxt">
+                                        <rect key="frame" x="116.5" y="62" width="39" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="jU2-aA-uks"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cli-gq-D1M">
+                                        <rect key="frame" x="97" y="114" width="78" height="44"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L95-rN-Oqw">
+                                        <rect key="frame" x="116.5" y="167.5" width="39" height="22"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="L95-rN-Oqw" firstAttribute="top" secondItem="cli-gq-D1M" secondAttribute="bottom" constant="9.5" id="1oh-Ca-M3b"/>
+                                    <constraint firstItem="L95-rN-Oqw" firstAttribute="centerX" secondItem="6zN-l1-qLt" secondAttribute="centerX" id="L8n-zY-rYy"/>
+                                    <constraint firstItem="FgX-UD-Yxt" firstAttribute="centerX" secondItem="UJD-vV-SxL" secondAttribute="centerX" id="MiK-6v-sOx"/>
+                                    <constraint firstItem="UJD-vV-SxL" firstAttribute="top" secondItem="6zN-l1-qLt" secondAttribute="top" constant="32" id="TzC-5X-9NB"/>
+                                    <constraint firstAttribute="height" constant="271.60000000000002" id="UFa-MH-qLc"/>
+                                    <constraint firstItem="cli-gq-D1M" firstAttribute="centerX" secondItem="6zN-l1-qLt" secondAttribute="centerX" id="Wnr-oW-ucE"/>
+                                    <constraint firstItem="FgX-UD-Yxt" firstAttribute="top" secondItem="UJD-vV-SxL" secondAttribute="bottom" constant="8" id="dYA-wE-SXe"/>
+                                    <constraint firstItem="cli-gq-D1M" firstAttribute="centerY" secondItem="6zN-l1-qLt" secondAttribute="centerY" id="gkN-gV-JEv"/>
+                                    <constraint firstItem="UJD-vV-SxL" firstAttribute="centerX" secondItem="6zN-l1-qLt" secondAttribute="centerX" id="hrb-ZB-tJV"/>
+                                    <constraint firstAttribute="width" constant="271.60000000000002" id="ugh-vu-uec"/>
+                                    <constraint firstItem="FgX-UD-Yxt" firstAttribute="width" secondItem="UJD-vV-SxL" secondAttribute="width" id="wyT-5c-E6V"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="NQh-rs-4pp"/>
+                                <connections>
+                                    <outlet property="messageLabel" destination="L95-rN-Oqw" id="r2h-PP-3uX"/>
+                                    <outlet property="subtitleLabel" destination="cli-gq-D1M" id="BtW-IO-o6d"/>
+                                    <outlet property="titleLabel" destination="UJD-vV-SxL" id="8yT-jz-P1F"/>
+                                </connections>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vvx-4a-qKI">
+                                <rect key="frame" x="71" y="420" width="272" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZGt-zo-O4i"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6zN-l1-qLt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4sd-MD-7KD"/>
+                            <constraint firstItem="6zN-l1-qLt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="83w-hV-e4c"/>
+                            <constraint firstItem="Vvx-4a-qKI" firstAttribute="top" secondItem="6zN-l1-qLt" secondAttribute="bottom" constant="27.5" id="LjB-NW-Iq2"/>
+                            <constraint firstItem="Vvx-4a-qKI" firstAttribute="trailing" secondItem="6zN-l1-qLt" secondAttribute="trailing" id="Plf-L5-Akg"/>
+                            <constraint firstItem="Vvx-4a-qKI" firstAttribute="leading" secondItem="6zN-l1-qLt" secondAttribute="leading" id="iC6-vB-ADq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="infoView" destination="6zN-l1-qLt" id="4kH-mZ-HpV"/>
+                        <outlet property="miniInfoStackView" destination="Vvx-4a-qKI" id="Fuq-bR-c8K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

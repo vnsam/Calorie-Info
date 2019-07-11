@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MiniInfoView" customModule="Lifesum" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpO-dc-7T8">
+                    <rect key="frame" x="190" y="52" width="34" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                    <color key="textColor" red="0.42352941176470588" green="0.42352941176470588" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tB-6s-c29">
+                    <rect key="frame" x="183" y="75.5" width="48" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="jD4-J4-suX"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tt3-bq-OBc">
+                    <rect key="frame" x="190" y="84.5" width="34" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                    <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vpO-dc-7T8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="7Om-jy-mmE"/>
+                <constraint firstItem="Tt3-bq-OBc" firstAttribute="centerX" secondItem="vpO-dc-7T8" secondAttribute="centerX" id="9PR-Eu-cff"/>
+                <constraint firstItem="Tt3-bq-OBc" firstAttribute="top" secondItem="5tB-6s-c29" secondAttribute="bottom" constant="8" id="HTo-Cc-QWk"/>
+                <constraint firstItem="5tB-6s-c29" firstAttribute="top" secondItem="vpO-dc-7T8" secondAttribute="bottom" constant="4" id="HzH-aG-m9a"/>
+                <constraint firstItem="vpO-dc-7T8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fwt-jU-cn6"/>
+                <constraint firstItem="5tB-6s-c29" firstAttribute="width" secondItem="vpO-dc-7T8" secondAttribute="width" multiplier="1.4" id="lHb-am-t8d"/>
+                <constraint firstItem="5tB-6s-c29" firstAttribute="centerX" secondItem="vpO-dc-7T8" secondAttribute="centerX" id="mKf-ue-t4b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="titleLabel" destination="vpO-dc-7T8" id="fi0-Oh-BdL"/>
+                <outlet property="valueLabel" destination="Tt3-bq-OBc" id="W6G-Pt-OIS"/>
+            </connections>
+        </view>
+    </objects>
+</document>
