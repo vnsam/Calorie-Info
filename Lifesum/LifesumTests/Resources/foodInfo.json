@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "carbs": 6.68,
+        "fiber": 0,
+        "title": "Hungarian peppers",
+        "pcstext": "Whole pepper",
+        "potassium": 0.202,
+        "sodium": 0.001,
+        "calories": 29,
+        "fat": 0.41,
+        "sugar": 0,
+        "gramsperserving": 30,
+        "cholesterol": 0,
+        "protein": 0.8,
+        "unsaturatedfat": 0.264,
+        "saturatedfat": 0.046
+    }
+}

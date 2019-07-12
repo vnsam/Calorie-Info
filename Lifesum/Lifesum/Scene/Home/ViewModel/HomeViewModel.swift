@@ -13,15 +13,19 @@ protocol HomeViewModelDelegate: class {
 }
 
 class HomeViewModel {
+    private var worker: HomeWorker?
     private(set) weak var delegate: HomeViewModelDelegate?
+
+    init(worker: HomeWorker = HomeWorker()) {
+        self.worker = worker
+    }
 
     func setDelegate(_ delegate: HomeViewModelDelegate) {
         self.delegate = delegate
     }
 
     func fetchFoodInfoForId(_ id: String) {
-        let worker = HomeWorker()
-        worker.fetchFoodInfoForId(id) { (foodInfo) in
+        worker?.fetchFoodInfoForId(id) { (foodInfo) in
             guard let foodInfo = foodInfo else { return }
 
             self.delegate?.didReceiveFoodInfo(foodInfo)

@@ -24,7 +24,23 @@
 		0C1A835922D78F91003DB6CE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A835822D78F91003DB6CE /* APIService.swift */; };
 		0C1A835D22D791C1003DB6CE /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A835C22D791C1003DB6CE /* HomeWorker.swift */; };
 		0C1A836122D794A4003DB6CE /* HomeViewController+HomeViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A836022D794A4003DB6CE /* HomeViewController+HomeViewModelDelegate.swift */; };
+		0CEBF24022D7FF7E0042FD54 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEBF23F22D7FF7E0042FD54 /* HomeViewModelTests.swift */; };
+		0CEBF24422D800240042FD54 /* foodInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CEBF24322D800240042FD54 /* foodInfo.json */; };
+		0CEBF24622D8006A0042FD54 /* HomeWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEBF24522D8006A0042FD54 /* HomeWorkerMock.swift */; };
+		0CEBF24822D800A80042FD54 /* Datagenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEBF24722D800A80042FD54 /* Datagenerator.swift */; };
+		0CEBF24B22D8038B0042FD54 /* HomeViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEBF24A22D8038B0042FD54 /* HomeViewModelDelegate.swift */; };
+		0CEBF24D22D8076F0042FD54 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEBF24C22D8076F0042FD54 /* HomeViewControllerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CEBF23922D7FF540042FD54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C1A831F22D78772003DB6CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1A832622D78772003DB6CE;
+			remoteInfo = Lifesum;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C1A832722D78772003DB6CE /* Lifesum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lifesum.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,10 +62,26 @@
 		0C1A835822D78F91003DB6CE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		0C1A835C22D791C1003DB6CE /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
 		0C1A836022D794A4003DB6CE /* HomeViewController+HomeViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+HomeViewModelDelegate.swift"; sourceTree = "<group>"; };
+		0CEBF23422D7FF540042FD54 /* LifesumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifesumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CEBF23822D7FF540042FD54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CEBF23E22D7FF7E0042FD54 /* LifesumTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LifesumTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		0CEBF23F22D7FF7E0042FD54 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		0CEBF24322D800240042FD54 /* foodInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = foodInfo.json; sourceTree = "<group>"; };
+		0CEBF24522D8006A0042FD54 /* HomeWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkerMock.swift; sourceTree = "<group>"; };
+		0CEBF24722D800A80042FD54 /* Datagenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datagenerator.swift; sourceTree = "<group>"; };
+		0CEBF24A22D8038B0042FD54 /* HomeViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelDelegate.swift; sourceTree = "<group>"; };
+		0CEBF24C22D8076F0042FD54 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0C1A832422D78772003DB6CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CEBF23122D7FF540042FD54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				0C1A832922D78772003DB6CE /* Lifesum */,
+				0CEBF23522D7FF540042FD54 /* LifesumTests */,
 				0C1A832822D78772003DB6CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				0C1A832722D78772003DB6CE /* Lifesum.app */,
+				0CEBF23422D7FF540042FD54 /* LifesumTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +222,45 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		0CEBF23522D7FF540042FD54 /* LifesumTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CEBF24922D801400042FD54 /* Helpers */,
+				0CEBF24222D800060042FD54 /* Resources */,
+				0CEBF24122D7FFFB0042FD54 /* Mocks */,
+				0CEBF23822D7FF540042FD54 /* Info.plist */,
+				0CEBF23F22D7FF7E0042FD54 /* HomeViewModelTests.swift */,
+				0CEBF24C22D8076F0042FD54 /* HomeViewControllerTests.swift */,
+				0CEBF23E22D7FF7E0042FD54 /* LifesumTests-Bridging-Header.h */,
+			);
+			path = LifesumTests;
+			sourceTree = "<group>";
+		};
+		0CEBF24122D7FFFB0042FD54 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0CEBF24522D8006A0042FD54 /* HomeWorkerMock.swift */,
+				0CEBF24A22D8038B0042FD54 /* HomeViewModelDelegate.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0CEBF24222D800060042FD54 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0CEBF24322D800240042FD54 /* foodInfo.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0CEBF24922D801400042FD54 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0CEBF24722D800A80042FD54 /* Datagenerator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,6 +281,24 @@
 			productReference = 0C1A832722D78772003DB6CE /* Lifesum.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0CEBF23322D7FF540042FD54 /* LifesumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CEBF23D22D7FF540042FD54 /* Build configuration list for PBXNativeTarget "LifesumTests" */;
+			buildPhases = (
+				0CEBF23022D7FF540042FD54 /* Sources */,
+				0CEBF23122D7FF540042FD54 /* Frameworks */,
+				0CEBF23222D7FF540042FD54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CEBF23A22D7FF540042FD54 /* PBXTargetDependency */,
+			);
+			name = LifesumTests;
+			productName = LifesumTests;
+			productReference = 0CEBF23422D7FF540042FD54 /* LifesumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -220,6 +311,11 @@
 				TargetAttributes = {
 					0C1A832622D78772003DB6CE = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					0CEBF23322D7FF540042FD54 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 0C1A832622D78772003DB6CE;
 					};
 				};
 			};
@@ -237,6 +333,7 @@
 			projectRoot = "";
 			targets = (
 				0C1A832622D78772003DB6CE /* Lifesum */,
+				0CEBF23322D7FF540042FD54 /* LifesumTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +348,14 @@
 				0C1A833222D78773003DB6CE /* Assets.xcassets in Resources */,
 				0C1A835322D78E21003DB6CE /* MiniInfoView.xib in Resources */,
 				0C1A833022D78772003DB6CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CEBF23222D7FF540042FD54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CEBF24422D800240042FD54 /* foodInfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +381,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0CEBF23022D7FF540042FD54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CEBF24D22D8076F0042FD54 /* HomeViewControllerTests.swift in Sources */,
+				0CEBF24622D8006A0042FD54 /* HomeWorkerMock.swift in Sources */,
+				0CEBF24822D800A80042FD54 /* Datagenerator.swift in Sources */,
+				0CEBF24B22D8038B0042FD54 /* HomeViewModelDelegate.swift in Sources */,
+				0CEBF24022D7FF7E0042FD54 /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CEBF23A22D7FF540042FD54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C1A832622D78772003DB6CE /* Lifesum */;
+			targetProxy = 0CEBF23922D7FF540042FD54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0C1A832E22D78772003DB6CE /* Main.storyboard */ = {
@@ -448,6 +573,49 @@
 			};
 			name = Release;
 		};
+		0CEBF23B22D7FF540042FD54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LifesumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dispatchq.eval.LifesumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LifesumTests/LifesumTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifesum.app/Lifesum";
+			};
+			name = Debug;
+		};
+		0CEBF23C22D7FF540042FD54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LifesumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dispatchq.eval.LifesumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LifesumTests/LifesumTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifesum.app/Lifesum";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -465,6 +633,15 @@
 			buildConfigurations = (
 				0C1A833A22D78773003DB6CE /* Debug */,
 				0C1A833B22D78773003DB6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CEBF23D22D7FF540042FD54 /* Build configuration list for PBXNativeTarget "LifesumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CEBF23B22D7FF540042FD54 /* Debug */,
+				0CEBF23C22D7FF540042FD54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
