@@ -64,9 +64,7 @@ class HomeViewController: UIViewController {
     }
 
     private func fetchRandomFoodInfo() {
-        let randomNumber = Int.random(in: Constants.FoodIdBound.lower...Constants.FoodIdBound.upper)
-
-        self.viewModel?.fetchFoodInfoForId("\(randomNumber)")
+        self.viewModel?.fetchRandomFoodInfo()
     }
 }
 
