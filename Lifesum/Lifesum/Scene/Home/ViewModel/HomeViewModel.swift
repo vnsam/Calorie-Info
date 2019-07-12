@@ -26,10 +26,13 @@ class HomeViewModel {
 
     func fetchRandomFoodInfo() {
         let randomNumber = Int.random(in: Constants.FoodIdBound.lower...Constants.FoodIdBound.upper)
-
-        worker?.fetchFoodInfoForId("\(randomNumber)") { (foodInfo) in
+        fetchFoodInfoForId(randomNumber.description)
+    }
+    
+    func fetchFoodInfoForId(_ id: String) {
+        worker?.fetchFoodInfoForId(id) { (foodInfo) in
             guard let foodInfo = foodInfo else { return }
-
+            
             self.delegate?.didReceiveFoodInfo(foodInfo)
         }
     }
