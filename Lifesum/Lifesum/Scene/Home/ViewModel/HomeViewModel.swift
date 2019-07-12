@@ -14,7 +14,7 @@ protocol HomeViewModelDelegate: class {
 
 class HomeViewModel {
     private var worker: HomeWorker?
-    private(set) weak var delegate: HomeViewModelDelegate?
+    private weak var delegate: HomeViewModelDelegate?
 
     init(worker: HomeWorker = HomeWorker()) {
         self.worker = worker
