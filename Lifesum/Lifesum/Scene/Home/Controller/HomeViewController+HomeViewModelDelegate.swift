@@ -16,7 +16,7 @@ extension HomeViewController: HomeViewModelDelegate {
     private func refreshUIForFoodInfo(_ foodInfo: FoodInfo) {
         DispatchQueue.main.async {
             self.infoView.set(
-                title: foodInfo.response.title,
+                title: foodInfo.response.title.uppercased(),
                 subTitle: "\(foodInfo.response.calories)",
                 message: Constants.message
             )

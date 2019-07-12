@@ -33,7 +33,7 @@ class HomeViewModelTests: XCTestCase {
     }
 
     func testDelegateCall_When_Successfully_Fetched_FoodInfo() {
-        self.sut.fetchFoodInfoForId("200")
+        self.sut.fetchRandomFoodInfo()
 
         let expectation = self.expectation(description: "Wait for delegate completion call back")
 
