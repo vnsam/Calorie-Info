@@ -20,6 +20,7 @@ struct Meta: Codable {
 struct Response: Codable {
     let carbs: Double
     let title: String
-    let calories, fat: Double
+    let calories: Double
+    let fat: Double
     let protein: Double
 }
