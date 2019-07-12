@@ -13,9 +13,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var infoView: CircleView!
     @IBOutlet weak var miniInfoStackView: UIStackView!
     
-    internal var carbsView: MiniInfoView?
-    internal var proteinView: MiniInfoView?
-    internal var fatView: MiniInfoView?
+    internal weak var carbsView: MiniInfoView?
+    internal weak var proteinView: MiniInfoView?
+    internal weak var fatView: MiniInfoView?
 
     private var viewModel: HomeViewModel?
 
